@@ -2,14 +2,16 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+import VueHead from 'vue-head'
 import App from './App'
+import head from './head'
 
 const Events = {
-  template: '<div> Events </div>'
+  template: "<div class='title is-2'> Events </div>"
 }
 
 const Schedule = {
-  template: '<div> Template </div>'
+  template: "<div class='title is-2'> Schedule </div>"
 }
 
 const routes = [
@@ -26,11 +28,13 @@ const routes = [
 const router = new VueRouter({routes})
 
 Vue.use(VueRouter)
+Vue.use(VueHead)
 
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
   router: router,
   template: '<App/>',
+  head: head,
   components: { App }
 })
