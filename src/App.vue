@@ -3,13 +3,13 @@
     <div id='content'>
 
       <div class="video">
-        <iframe id="ytplayer" class="video" type="text/html" src="http://www.youtube.com/embed/1nxCqmBj3u0?controls=1&showinfo=0&rel=0&autoplay=1&loop=1&mute=1&enablejsapi=1&playlist=1nxCqmBj3u0" frameborder="0" allowfullscreen></iframe>
+        <iframe id="ytplayer" class="video" type="text/html" src="https://www.youtube.com/embed/1nxCqmBj3u0?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&mute=1&enablejsapi=1&playlist=1nxCqmBj3u0" frameborder="0" allowfullscreen></iframe>
       </div>    
 
       <sidebar></sidebar>
       <h1 class="content__heading">8th Mile</h1>
       <p class="content__teaser"> LIFE IN TECHNICOLOUR! </p>
-      <a href="#" class="content__cta">View our Events!</a>
+      <a href="#" class="content__cta">View our Events</a>
 
       <!-- route outlet -->
       <!-- component matched by the route will render here -->

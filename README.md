@@ -2,7 +2,7 @@
 
 # web
 
-> Web app for 8th mile
+> Web app for 8th mile [Preview](https://th-mile-5f293.firebaseapp.com/#/)
 
 ## Build Setup
 
@@ -27,3 +27,15 @@ npm test
 ```
 
 For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+
+## Deploy setup
+``` bash
+# install firebase tools
+npm i -g firebase-tools
+
+# login
+firebase login
+
+# to deploy
+firebase deploy
+```
