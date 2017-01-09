@@ -1,9 +1,9 @@
 <template>
-<nav class="nav">
+<nav class="nav nav-transparent">
   <div class="nav-left">
-    <a class="nav-item">
-      <img src="https://cdn.thecollegefever.com/upload/595024658__1801282_438077199651196_326975044_o.png" alt="8th mile logo">
-    </a>
+    <router-link to="/" class="nav-item title is-4">
+      8th Mile
+    </router-link>
   </div>
 
   <div class="nav-center">
@@ -29,31 +29,19 @@
 
   <!-- This "nav-menu" is hidden on mobile -->
   <!-- Add the modifier "is-active" to display it on mobile -->
-  <div class="nav-right nav-menu" v-bind:class="{'is-active': navBarOpen}">
-    <router-link to="/" class="nav-item">
+  <div class="nav-right nav-menu nav-transparent" v-bind:class="{'is-active': navBarOpen}">
+    <router-link to="/" class="nav-item is-4 is-tab">
       Home
     </router-link>
-    <router-link to="/events" class="nav-item">
+    <router-link to="/events" class="nav-item is-4 is-tab">
       Events
     </router-link>
-    <router-link to="/schedule" class="nav-item">
+    <router-link to="/schedule" class="nav-item is-4 is-tab">
       Schedule
     </router-link>
-
-    <span class="nav-item">
-      <a class="button" >
-        <span class="icon">
-          <i class="fa fa-twitter"></i>
-        </span>
-        <span>Tweet</span>
-      </a>
-      <a class="button is-primary">
-        <span class="icon">
-          <i class="fa fa-user"></i>
-        </span>
-        <span>Log In</span>
-      </a>
-    </span>
+    <router-link to="/login" class="nav-item is-4 is-tab">
+        Log In
+    </router-link>
   </div>
 </nav>
 </template>
@@ -69,3 +57,17 @@
     }
   }
 </script>
+
+<style type="text/css">
+  .nav-transparent {
+    background-color: rgba(0, 0, 0, 0.4); 
+  }
+
+  .nav {
+    font-family: Roboto, sans-serif;
+  }
+
+  .nav:hover {
+    color: #fff;
+  }
+</style>

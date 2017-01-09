@@ -7,7 +7,7 @@ export default {
     { charset: 'utf-8' },
     { 'http-equiv': 'x-ua-compatible', content: 'ie=edge' },
     { name: 'viewport', content: 'width=device-width, initial-scale=1, shrink-to-fit=no' },
-    { name: 'application-name', content: 'Name of my application' },
+    { name: 'application-name', content: '8th Mile' },
     { name: 'description', content: 'A description of the page', id: 'desc' },
     // ...
     // Twitter
@@ -29,6 +29,7 @@ export default {
   // link tags
   link: [
     { rel: 'author', href: 'Akash Shakdwipeea', undo: false }, // undo property - not to remove the element
-    { rel: 'stylesheet', href: 'https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css' }
+    { rel: 'stylesheet', href: 'https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css' },
+    { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto' }
   ]
 }
