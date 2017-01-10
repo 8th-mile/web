@@ -1,6 +1,6 @@
 [![Standard - JavaScript Style Guide](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
 
-# web
+# web [![Build Status](https://travis-ci.org/8th-mile/web.svg?branch=master)](https://travis-ci.org/8th-mile/web)
 
 > Web app for 8th mile [Preview](https://th-mile-5f293.firebaseapp.com/#/)
 
