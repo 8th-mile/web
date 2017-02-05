@@ -33,13 +33,13 @@ const routes = [
 
 const router = new VueRouter({routes})
 
-Vue.use(VueRouter)
+// Vue.use(VueRouter)
 Vue.use(VueHead)
 
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
-  router: router,
+  // router: router,
   template: '<App/>',
   head: head,
   components: { App }

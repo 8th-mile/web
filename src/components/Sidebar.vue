@@ -1,9 +1,9 @@
 <template>
 <nav class="nav nav-transparent">
   <div class="nav-left">
-    <router-link to="/" class="nav-item title is-4">
+    <a href="/" class="nav-item title is-4">
       8th Mile
-    </router-link>
+    </a>
   </div>
 
   <div class="nav-center">
@@ -30,18 +30,18 @@
   <!-- This "nav-menu" is hidden on mobile -->
   <!-- Add the modifier "is-active" to display it on mobile -->
   <div class="nav-right nav-menu nav-transparent" v-bind:class="{'is-active': navBarOpen}">
-    <router-link to="/" class="nav-item is-4 is-tab">
+    <a href="/" class="nav-item is-4 is-tab">
       Home
-    </router-link>
-    <router-link to="/events" class="nav-item is-4 is-tab">
+    </a>
+    <a href="/events.html" class="nav-item is-4 is-tab">
       Events
-    </router-link>
-    <router-link to="/schedule" class="nav-item is-4 is-tab">
-      Schedule
-    </router-link>
-    <router-link to="/login" class="nav-item is-4 is-tab">
-        Log In
-    </router-link>
+    </a>
+    <a href="/sponsors.html" class="nav-item is-4 is-tab">
+      Sponsors
+    </a>
+    <a href="/hospitality.html" class="nav-item is-4 is-tab">
+      Hospitality
+    </a>
   </div>
 </nav>
 </template>
