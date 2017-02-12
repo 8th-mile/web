@@ -39,7 +39,7 @@
     <a class="nav-item" href="/frontPage">
       Home
     </a>
-    <a class="nav-item" href="file:///C:/Users/Akshat/web/src/events.html">
+    <a class="nav-item" href="/events.html">
       Events
     </a>
     <a class="nav-item">
