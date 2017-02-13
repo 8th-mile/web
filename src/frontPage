@@ -3,7 +3,7 @@
 
 <html>
   <body>
-
+<div class="container">
 
   <nav class="nav  is-dark">
   <div class="nav-left">
@@ -52,7 +52,7 @@
 </nav>
     <!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
     <div id="player"></div>
-
+</div>
     <script>
       // 2. This code loads the IFrame Player API code asynchronously.
       var tag = document.createElement('script');
