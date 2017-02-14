@@ -7,10 +7,7 @@ import App from './App'
 import head from './head'
 
 import Home from './components/Home'
-
-const Events = {
-  template: "<div class='title is-2'> Events </div>"
-}
+import Events from './components/Events'
 
 const Schedule = {
   template: "<div class='title is-2'> Schedule </div>"
