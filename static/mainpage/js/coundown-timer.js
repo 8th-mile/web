@@ -20,29 +20,28 @@
 		//main countdown function
 		function countdown_proc() {
 			
-			eventDate = Date.parse(settings['date']) / 1000;
-			currentDate = Date.now() / 1000;
+			// Put correct Date here 
+			var eventDate = Date.UTC(2017, 02, 24, 12, 30);
+			var currentDate = Date.now();
 			
 			if(eventDate <= currentDate) {
 				callback.call(this);
 				clearInterval(interval);
 			}
 			
-			console.log(eventDate, currentDate);
-			seconds = Math.abs(eventDate - currentDate);
-			
-			days = Math.abs(Math.ceil(seconds / (60 * 60 * 24))); //calculate the number of days
-			console.log("Days", days);
+			var seconds = Math.abs(eventDate - currentDate);
+
+			seconds = (eventDate - currentDate)  / 1000;
+
+			days = Math.floor(seconds / (60 * 60 * 24)); //calculate the number of days
 			seconds -= days * 60 * 60 * 24; //update the seconds variable with no. of days removed
 			
-			hours = Math.abs(Math.ceil(seconds / (60 * 60)));
-			console.log("Hours", hours);
+			hours = Math.floor(seconds / (60 * 60));
 			seconds -= hours * 60 * 60; //update the seconds variable with no. of hours removed
 			
-			minutes = Math.abs(Math.ceil(seconds / 60));
-			console.log("Minutes ", minutes);
+			minutes = Math.floor(seconds / 60);
 			seconds -= minutes * 60; //update the seconds variable with no. of minutes removed
-			
+			seconds = Math.floor(seconds);
 			//conditional Ss
 			if (days == 1) { thisEl.find(".timeRefDays").text("day"); } else { thisEl.find(".timeRefDays").text("days"); }
 			if (hours == 1) { thisEl.find(".timeRefHours").text("hour"); } else { thisEl.find(".timeRefHours").text("hours"); }
@@ -64,16 +63,16 @@
 				thisEl.find(".minutes").text(minutes);
 				thisEl.find(".seconds").text(seconds);
 			} else { 
-				alert("Invalid date. Here's an example: 12 Tuesday 2012 17:30:00");
+				// alert("Invalid date. Here's an example: 12 Tuesday 2012 17:30:00");
 				clearInterval(interval); 
 			}
 		}
 		
 		//run the function
-		// countdown_proc();
+		countdown_proc();
 		
 		//loop the function
-		// interval = setInterval(countdown_proc, 1000);
+		interval = setInterval(countdown_proc, 1000);
 		
 	}
 }) (jQuery);
