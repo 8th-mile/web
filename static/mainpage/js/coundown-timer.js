@@ -6,35 +6,41 @@
 
 		//array of custom settings
 		var settings = { 
-			'date': null,
-			'format': null
+			'date': "Feb 20, 2017 20:57:00",
+			'format': "on"
 		};
 
+		var interval;
+
 		//append the settings array to options
-		if(options) {
-			$.extend(settings, options);
-		}
+		// if(options) {
+		// 	$.extend(settings, options);
+		// }
 		
 		//main countdown function
 		function countdown_proc() {
 			
 			eventDate = Date.parse(settings['date']) / 1000;
-			currentDate = Math.floor($.now() / 1000);
+			currentDate = Date.now() / 1000;
 			
 			if(eventDate <= currentDate) {
 				callback.call(this);
 				clearInterval(interval);
 			}
 			
-			seconds = eventDate - currentDate;
+			console.log(eventDate, currentDate);
+			seconds = abs(eventDate - currentDate);
 			
-			days = Math.floor(seconds / (60 * 60 * 24)); //calculate the number of days
+			days = Math.abs(Math.ceil(seconds / (60 * 60 * 24))); //calculate the number of days
+			console.log("Days", days);
 			seconds -= days * 60 * 60 * 24; //update the seconds variable with no. of days removed
 			
-			hours = Math.floor(seconds / (60 * 60));
+			hours = Math.abs(Math.ceil(seconds / (60 * 60)));
+			console.log("Hours", hours);
 			seconds -= hours * 60 * 60; //update the seconds variable with no. of hours removed
 			
-			minutes = Math.floor(seconds / 60);
+			minutes = Math.abs(Math.ceil(seconds / 60));
+			console.log("Minutes ", minutes);
 			seconds -= minutes * 60; //update the seconds variable with no. of minutes removed
 			
 			//conditional Ss
