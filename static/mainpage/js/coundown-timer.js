@@ -29,7 +29,7 @@
 			}
 			
 			console.log(eventDate, currentDate);
-			seconds = abs(eventDate - currentDate);
+			seconds = Math.abs(eventDate - currentDate);
 			
 			days = Math.abs(Math.ceil(seconds / (60 * 60 * 24))); //calculate the number of days
 			console.log("Days", days);
