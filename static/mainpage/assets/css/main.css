@@ -959,6 +959,10 @@
 
 	}
 
+	.sponsors{
+		height: 450px !important;
+	}
+
 	@media screen and (max-width: 736px) {
 
 		.row > * {
@@ -1654,12 +1658,20 @@
 				font-size: 14pt;
 			}
 
+			.sponsors{
+				height: 450px !important;
+			}
+
 		}
 
 		@media screen and (max-width: 1280px) {
 
 			body, input, select, textarea {
 				font-size: 12pt;
+			}
+
+			.sponsors{
+				height: 450px !important;
 			}
 
 		}
@@ -3986,3 +3998,4 @@
 			opacity: 1;
 			visibility: visible;
 		}
+
