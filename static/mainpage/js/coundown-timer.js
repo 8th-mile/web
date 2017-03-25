@@ -21,7 +21,7 @@
 		function countdown_proc() {
 			
 			// Put correct Date here 
-			var eventDate = Date.UTC(2017, 02, 24, 12, 30);
+			var eventDate = Date.UTC();
 			var currentDate = Date.now();
 			
 			if(eventDate <= currentDate) {
